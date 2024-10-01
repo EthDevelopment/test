@@ -90,3 +90,13 @@ https://spring.io/quickstart
 https://github.com/EthDevelopment/springHelloWorld
 
 HelloWorld complete, I have a fundamental understanding of how it works
+
+1. Create a dummy endpoint to display text and test input setup ✅
+
+2. Connect my db and display it in any format ❌
+   Error 404 thrown
+
+3. Installed a tool for api testing
+   
+
+4. Format db correctly
