@@ -52,3 +52,29 @@ scripts will be run automatically.
 To apply any script changes when the database is already running you will need to stop the running database container
 and destroy it. Running `docker-compose down` will stop the environment and destroy the containers for you, the next
 time you bring the environment up the containers will be created again.
+
+
+
+### Tasks
+
+Part 1 - Setup and verification 
+
+1. ./check_prerequisites.sh ✅
+2. docker --version (24.0.2) ✅
+3. docker compose version v2.19.1 ✅
+4. test docker-compose-up ❌
+
+(base) swalehabdulrehman@MachineX anaplan_interview % docker-compose up --force-recreate
+[+] Running 0/1
+ ⠹ mysql-db Pulling                                                                                                                                                                           2.1s 
+no matching manifest for linux/arm64/v8 in the manifest list entries
+
+5. Fix docker-compose-up ✅
+
+      image: arm64v8/mysql:8.0
+
+“Update the docker-compose.yml file to use ARM-compatible images, ensuring that the services can build and run seamlessly on ARM architecture machines.”
+
+6. smoketests ✅
+   
+7. check db is being 
