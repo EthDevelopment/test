@@ -15,11 +15,6 @@ public class DashboardController {
     @Autowired
     private DashboardRepository dashboardRepository;
 
-    @GetMapping("/health")
-    public String health() {
-        return "API is up and running!";
-    }
-
     @GetMapping("/dashboards")
     public List<Dashboard> getDashboards() {
         System.out.println("Fetching dashboards...");
