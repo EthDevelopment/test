@@ -77,4 +77,11 @@ no matching manifest for linux/arm64/v8 in the manifest list entries
 
 6. smoketests ✅
    
-7. check db is being 
+7. check db is seeding data ✅
+
+Part 2 - API Implementation
+
+Framework and language
+
+Selected Java and Spring 
+Reasoning - I have limited experience with Java and Python from projects and university and since java will be used for the roll it makes sense to get some experience
