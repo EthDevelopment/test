@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to MagiDash Corp - Our mission is to empower people in corporations to have one place to visualise any data relevant to their job. As such, we create rich and flexible dashboarding tools which will integrate seamlessly with any data source and present the data in many different formats. 
+Welcome to MagiDash Corp - Our mission is to empower people in corporations to have one place to visualise any data relevant to their job. As such, we create rich and flexible dashboarding tools which will integrate seamlessly with any data source and present the data in many different formats.
 
 To get the project started we want to be able to show a list of dummy dashboards to users so that we can get a feel for if the clients like the concepts in a demo form.
 
@@ -13,6 +13,7 @@ Provided is a docker based environment that uses [docker-compose](https://docs.d
 Your task is to build an api service which implements a `/dashboards` endpoint that returns a list of dashboard objects retrieved from the mysql database provided.
 
 The expected format of the dashboard object should be roughly
+
 ```json
 {
   "id": <Long>,
@@ -53,11 +54,9 @@ To apply any script changes when the database is already running you will need t
 and destroy it. Running `docker-compose down` will stop the environment and destroy the containers for you, the next
 time you bring the environment up the containers will be created again.
 
-
-
 ### Tasks
 
-Part 1 - Setup and verification 
+Part 1 - Setup and verification
 
 1. ./check_prerequisites.sh ✅
 2. docker --version (24.0.2) ✅
@@ -66,22 +65,28 @@ Part 1 - Setup and verification
 
 (base) swalehabdulrehman@MachineX anaplan_interview % docker-compose up --force-recreate
 [+] Running 0/1
- ⠹ mysql-db Pulling                                                                                                                                                                           2.1s 
+⠹ mysql-db Pulling 2.1s
 no matching manifest for linux/arm64/v8 in the manifest list entries
 
 5. Fix docker-compose-up ✅
 
-      image: arm64v8/mysql:8.0
+   image: arm64v8/mysql:8.0
 
 “Update the docker-compose.yml file to use ARM-compatible images, ensuring that the services can build and run seamlessly on ARM architecture machines.”
 
 6. smoketests ✅
-   
 7. check db is seeding data ✅
 
 Part 2 - API Implementation
 
 Framework and language
 
-Selected Java and Spring 
+Selected Java and Spring
 Reasoning - I have limited experience with Java and Python from projects and university and since java will be used for the roll it makes sense to get some experience
+
+Practice? - I will do the helloworld endpoint available in the spring docs to get familiar
+https://spring.io/quickstart
+
+https://github.com/EthDevelopment/springHelloWorld
+
+HelloWorld complete, I have a fundamental understanding of how it works
