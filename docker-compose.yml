@@ -9,13 +9,23 @@ services:
       MYSQL_ROOT_PASSWORD: test123
       MYSQL_DATABASE: definitions
     volumes:
-      - ./database:/docker-entrypoint-initdb.d
+      - ./database:/docker-entrypoint-initdb.d # This line points to database directory
     healthcheck:
-      test: ["CMD-SHELL", "mysql -ptest123 -e 'select 1'"]
+      test: ["CMD-SHELL", "mysql -utest123 -e 'select 1'"]
       interval: 5s
       retries: 50
 
   api:
+    image: dash-endpoint-api-image:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - mysql-db
+    ports:
+      - "8080:8080"
+
+  nginx:
     image: nginx:latest
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf

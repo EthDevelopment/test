@@ -96,7 +96,15 @@ HelloWorld complete, I have a fundamental understanding of how it works
 2. Connect my db and display it in any format ❌
    Error 404 thrown
 
-3. Installed a tool for api testing
-   
+3. Manually seeded the endpoint with ✅
+   INSERT INTO dashboards (created_at, updated_at, title) VALUES 
+  (NOW(), NOW(), 'Dashboard 1'),
+  (NOW(), NOW(), 'Dashboard 2'),
+  (NOW(), NOW(), 'Dashboard 3');
 
-4. Format db correctly
+4. dashboards returns the data formatted as intended ✅
+
+
+Part 3 - Docker API integration
+
+1. 

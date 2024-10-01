@@ -13,3 +13,5 @@ INSERT INTO dashboards (createdAt, updatedAt, title) VALUES
 (NOW(), NOW(), 'Dashboard 1'),
 (NOW(), NOW(), 'Dashboard 2'),
 (NOW(), NOW(), 'Dashboard 3');
+(NOW(), NOW(), 'Dashboard 4');
+(NOW(), NOW(), 'Dashboard 5');
