@@ -1,0 +1,9 @@
+2024-10-02 14:24:50.105873Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DASHBOARDS" not found (this database is empty); SQL statement:
+select d1_0.id,d1_0.created_at,d1_0.title,d1_0.updated_at from dashboards d1_0 [42104-224]
+2024-10-02 14:24:56.217507Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DASHBOARDS" not found (this database is empty); SQL statement:
+select d1_0.id,d1_0.created_at,d1_0.title,d1_0.updated_at from dashboards d1_0 [42104-224]
+2024-10-02 14:25:39.515385Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DASHBOARDS" not found (this database is empty); SQL statement:
+select d1_0.id,d1_0.created_at,d1_0.title,d1_0.updated_at from dashboards d1_0 [42104-224]
