@@ -97,6 +97,7 @@ HelloWorld complete, I have a fundamental understanding of how it works
    Error 404 thrown
 
 3. Manually seeded the endpoint with ✅
+
    INSERT INTO dashboards (created_at, updated_at, title) VALUES
    (NOW(), NOW(), 'Dashboard 1'),
    (NOW(), NOW(), 'Dashboard 2'),
