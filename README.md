@@ -97,14 +97,17 @@ HelloWorld complete, I have a fundamental understanding of how it works
    Error 404 thrown
 
 3. Manually seeded the endpoint with ✅
-   INSERT INTO dashboards (created_at, updated_at, title) VALUES 
-  (NOW(), NOW(), 'Dashboard 1'),
-  (NOW(), NOW(), 'Dashboard 2'),
-  (NOW(), NOW(), 'Dashboard 3');
+   INSERT INTO dashboards (created_at, updated_at, title) VALUES
+   (NOW(), NOW(), 'Dashboard 1'),
+   (NOW(), NOW(), 'Dashboard 2'),
+   (NOW(), NOW(), 'Dashboard 3');
 
 4. dashboards returns the data formatted as intended ✅
 
-
 Part 3 - Docker API integration
 
-1. 
+1. Docker runs with all containers ✅
+
+2. Dashboard endpoint is returning the data ❌
+
+3. Dashboard data is formatted as expected
