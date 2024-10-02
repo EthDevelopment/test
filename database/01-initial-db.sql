@@ -8,10 +8,10 @@ CREATE TABLE IF NOT EXISTS `dashboards` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Insert sample data
+-- Sample data
 INSERT INTO dashboards (createdAt, updatedAt, title) VALUES
 (NOW(), NOW(), 'Dashboard 1'),
 (NOW(), NOW(), 'Dashboard 2'),
-(NOW(), NOW(), 'Dashboard 3');
-(NOW(), NOW(), 'Dashboard 4');
+(NOW(), NOW(), 'Dashboard 3'),
+(NOW(), NOW(), 'Dashboard 4'),
 (NOW(), NOW(), 'Dashboard 5');
