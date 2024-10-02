@@ -111,3 +111,7 @@ Part 3 - Docker API integration
 2. Dashboard endpoint is returning the data ❌
 
 3. Dashboard data is formatted as expected
+
+Part 4 - SmokeTests
+
+1. Smoke tests are adjusted for Dashboard API
